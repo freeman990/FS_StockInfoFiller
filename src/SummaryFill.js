@@ -5,7 +5,7 @@ export function csvToSummaries(ResourcefileName){
   // Reading file with UTF8 but unable to show Chinese character
   //let summaries = JSON.parse(NSString.stringWithContentsOfFile_encoding_error(dataPath,NSUTF8StringEncoding,null))
   let summaries = JSON.parse( NSString.stringWithContentsOfFile(dataPath) )
-  log(summaries == null ? 'Failed to load JSON':'JSON data ready')
+  log(summaries == null ? 'Failed to load JSON':'JSON data load ready')
 
   //Array each item's data and shuffle data order
   const dataSample = summaries[0].data.split(',')
