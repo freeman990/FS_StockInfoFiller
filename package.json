@@ -1,0 +1,31 @@
+{
+  "name": "fs_stocksummaryfiller",
+  "description": "一系列关于股票数据的自动填充/生成工具",
+  "version": "0.1.0",
+  "engines": {
+    "sketch": ">=49.0"
+  },
+  "skpm": {
+    "name": "FS_StockSummaryFiller",
+    "manifest": "src/manifest.json",
+    "main": "fs_stocksummaryfiller.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ],
+    "sketch-assets-file": "sketch-assets/icons.sketch"
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch --run",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.7.0"
+  },
+  "author": "Freeman Sun <freeman990@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freeman990/FS_StockInfoFiller"
+  }
+}
