@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/BohemianCoding/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "✅ 刷新数据",
+      "identifier": "fs_stockinfofiller.refresh-stock-summary-data",
+      "script": "./refresh-data.js"
+    },
+    {
+      "name": "🔤 可用关键字",
+      "identifier": "fs_stockinfofiller.list-stock-summary-data",
+      "script": "./list-data.js"
+    }
+  ],
+  "menu": {
+    "title": "FS_股票盘口数据填充",
+    "items": [
+      "fs_stockinfofiller.refresh-stock-summary-data",
+      "fs_stockinfofiller.list-stock-summary-data"
+    ]
+  }
+}
